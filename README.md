@@ -9,43 +9,11 @@
 
 ## Installazione Laravel
 
-```bash
-cd your parent_folder_path
+Create un nuovo progetto Laravel. <br>
 
-composer create-project --prefer-dist laravel/laravel:^9.2 your_project_name_here
+Concentratevi sul layout: <br>
+- create un file di layout in cui inserire la struttura comune di tutte le pagine del sito web (tag head, tag body, ...) eventualmente includendo header e footer tramite due partials. <br>
+- Create poi una rotta per visualizzare la lista di tutti i fumetti recuperati da un file inserito nella cartella config e abbellite il tutto sfruttando Sass.
 
-cd your_project_name_here
-
-code . -r
-
-php artisan serve
-
-ctrl + c
-
-```
-## Configurazione Laravel
-```bash
-composer require pacificdev/laravel_9_preset
-
-php artisan preset:ui bootstrap
-
-npm install
-
-npm install --save @fortawesome/fontawesome-free
-
-#in vite config aggiungo agli alias
-'~@fortawesome': path.resolve(__dirname, 'node_modules/@fortawesome'),
-
-#copio la cartella dei webfont e se voglio la rinomino
-
-#comandi git
-
-git init
-git add .
-git commit -m "first commit"
-git branch -M main
-git remote add origin your_git_url 
-git push -u origin main
-
-
-```
+## Bonus:
+Create più pagine istituzionali che condividono lo stesso layout (utilizzando il routing)
