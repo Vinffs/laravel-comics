@@ -161,3 +161,31 @@ header {
         margin: 0;
     }
 }
+
+#bottomFooter {
+    background-color: $color_secondary;
+
+    button {
+        background-color: $color_secondary;
+        color: $color_white;
+        font-size: 1.2em;
+        font-weight: bold;
+        border: 2px solid $color_primary;
+        padding: 0.5em 1em;
+        border-radius: 0 !important;
+    }
+
+    li {
+        padding: 0 0.5em;
+    }
+
+    ul {
+        margin: 0 !important;
+
+        & > li:first-child {
+            color: $color_primary;
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+    }
+}
