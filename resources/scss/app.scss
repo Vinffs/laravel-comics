@@ -122,3 +122,42 @@ header {
         }
     }
 }
+
+#footerList {
+    background-image: url("../images/footer-bg.jpg");
+    background-size: cover;
+
+    ul {
+        margin: 0 !important;
+        padding: 0 2.5em 0 0 !important;
+        list-style: none;
+    }
+
+    .headerList {
+        color: $color_white;
+        font-size: 1.2em;
+        font-weight: bold;
+        padding-bottom: 0.5em;
+    }
+
+    #identifier > ul:last-child {
+        padding-top: 1em !important;
+    }
+
+    .footerPadding {
+        padding: 3em 0 5em 0.75em;
+    }
+
+    a {
+        text-decoration: none;
+        color: $color_lightgrey;
+    }
+
+    #imgContainer {
+        background-image: url("../images/dc-logo-bg.png");
+        background-position-y: -110px;
+        background-size: cover;
+        width: 50%;
+        margin: 0;
+    }
+}

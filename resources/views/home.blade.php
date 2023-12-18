@@ -9,5 +9,8 @@
         @include('partials.comics')
         @include('partials.features')
     </main>
+    <footer>
+        @include('partials.topfooter')
+    </footer>
 
 @endsection
