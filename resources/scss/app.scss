@@ -9,6 +9,27 @@ $fa-font-path: "../webfonts" !default;
 
 @import '~bootstrap/scss/bootstrap';
 
-h1 {
-    color: $text-color;
+header{
+    li {
+        padding: 4em 0.8em;
+        font-size: 0.9em;
+        font-weight: bold;
+      
+        &.activePage,
+        &:hover {
+          color: $color_primary;
+          padding-bottom: 15px;
+          border-bottom: 5px solid $color_primary;
+        }
+      
+        a {
+          text-decoration: none;
+          color: $color_black;
+        }
+      
+        &.activePage a,
+        &:hover a {
+          color: $color_primary;
+        }
+    }
 }
