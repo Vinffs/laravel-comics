@@ -1,23 +1,25 @@
 <?php
 return [
-  [
-    "sectionName" => "DIGITAL COMICS",
-    "sectionImage" => "/images/buy-comics-digital-comics.png",
-  ],
-  [
-    "sectionName" => "DC MERCHANDISE",
-    "sectionImage" => "/images/buy-comics-merchandise.png",
-  ],
-  [
-    "sectionName" => "SUBSCRIPTION",
-    "sectionImage" => "/images/buy-comics-subscriptions.png",
-  ],
-  [
-    "sectionName" => "COMIC SHOP LOCATOR",
-    "sectionImage" => "/images/buy-comics-shop-locator.png",
-  ],
-  [
-    "sectionName" => "DC POWER VISA",
-    "sectionImage" => "/images/buy-dc-power-visa.svg",
-  ],
+    'sections' => [
+        [
+            "sectionName" => "DIGITAL COMICS",
+            "sectionImage" => "resources/images/buy-comics-digital-comics.png",
+        ],
+        [
+            "sectionName" => "DC MERCHANDISE",
+            "sectionImage" => "resources/images/buy-comics-merchandise.png",
+        ],
+        [
+            "sectionName" => "SUBSCRIPTION",
+            "sectionImage" => "resources/images/buy-comics-subscriptions.png",
+        ],
+        [
+            "sectionName" => "COMIC SHOP LOCATOR",
+            "sectionImage" => "resources/images/buy-comics-shop-locator.png",
+        ],
+        [
+            "sectionName" => "DC POWER VISA",
+            "sectionImage" => "resources/images/buy-dc-power-visa.svg",
+        ],
+    ]
 ];
