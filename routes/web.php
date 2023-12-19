@@ -14,7 +14,11 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('home');
+    $footer = config('footerlist.list');
+    $comicList = config('comics.comics');
+    $features = config('sections.sections');
+    $navbar = config('nav.navbar');
+    return view('home', compact('footer', 'comicList', 'features', 'navbar'));
 })->name('home');
 
 Route::get('/news', function () {

@@ -4,7 +4,7 @@
             <a href="{{ Route('home') }}"><img src="{{ Vite::asset('resources/images/dc-logo.png') }}" alt="dc-logo"></a>
         </div>
         <ul class="d-flex list-unstyled m-0">
-            @foreach (config('nav.navbar') as $title)
+            @foreach ($navbar as $title)
                 <li {{-- @class(['activePage' => $title['active']]) --}}>
                     <a href="{{ $title['url'] }}">{{ $title['sectionTitle'] }}</a>
                 </li>
