@@ -51,7 +51,7 @@ return [
         ],
         [
             "sectionTitle" => "NEWS",
-            "url" => "/news",
+            "url" => "#",
             "name" => "news",
             "active" => false,
         ],

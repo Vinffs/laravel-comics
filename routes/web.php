@@ -17,6 +17,15 @@ Route::get('/', function () {
     return view('home');
 })->name('home');
 
-Route::get('/news', function () {
-    return view('news');
-})->name('news');
+
+Route::get('/comic/{id}', function ($id) {
+    $comics = config('comics.comics');
+
+    if ($id >= 0 && $id < count($comics)) {
+        $comic = $comics[$id];
+
+        return view('show', compact('comic'));
+    } else {
+        abort(404);
+    }
+})->name('show');
