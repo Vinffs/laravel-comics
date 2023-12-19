@@ -209,4 +209,22 @@ header {
             }
         }
     }
+
+    .descriptionComic {
+        text-wrap: balance;
+        padding: 1em 0;
+    }
+
+    .adv {
+        margin: 0 !important;
+        font-size: 1em;
+    }
+    #bar {
+        background-color: #55ba59;
+        color: $color_white;
+
+        .availableBox {
+            border-left: 1px solid black;
+        }
+    }
 }
