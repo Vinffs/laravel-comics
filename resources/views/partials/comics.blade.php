@@ -1,6 +1,6 @@
 <section id="comics" class="d-flex justify-content-center">
     <div class="row container justify-content-center">
-        @foreach ($comicList as $comic)
+        @foreach (config('comics.comics') as $comic)
             <div class="col-5 col-sm-5 col-md-4 col-lg-3 col-xl-3 col-xxl-2">
                 <div class="card py-3 border-0">
                     <div>
