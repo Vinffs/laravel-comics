@@ -211,7 +211,7 @@ header {
     }
 
     .descriptionComic {
-        text-wrap: balance;
+        text-wrap: wrap;
         padding: 1em 0;
     }
 
@@ -221,10 +221,20 @@ header {
     }
     #bar {
         background-color: #55ba59;
+        border-bottom: 1px solid black;
         color: $color_white;
 
         .availableBox {
             border-left: 1px solid black;
+        }
+    }
+
+    #specs {
+        background-color: #f6f6f6;
+        padding: 2em 0 4em 0;
+
+        .seriesName {
+            color: $color_primary;
         }
     }
 }

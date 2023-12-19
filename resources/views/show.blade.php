@@ -37,9 +37,26 @@
         </section>
         <section id="specs">
             <div class="container">
-                Specs
+                <div class="row">
+                    <div class="col-6">
+                        <h4 class="pb-3">Specs</h4>
+                        <div class="py-2 border-top row">
+                            <span class="col-3">Series: </span>
+                            <span class="col-9 seriesName">{{ $comic['series'] }}</span>
+                        </div>
+                        <div class="py-2 border-top row">
+                            <span class="col-3">U.S. Price: </span>
+                            <span class="col-9">{{ $comic['price'] }}</span>
+                        </div>
+                        <div class="py-2 border-top border-bottom row">
+                            <span class="col-3">On Sale Date: </span>
+                            <span class="col-9">{{ $comic['sale_date'] }}</span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
+        @include('partials.features')
     </main>
 
 @endsection
