@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ComicController;
 
 /*
 |--------------------------------------------------------------------------
@@ -29,3 +30,5 @@ Route::get('/comic/{id}', function ($id) {
         abort(404);
     }
 })->name('show');
+
+Route::resource('comics', ComicController::class);
